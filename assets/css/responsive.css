@@ -5,16 +5,29 @@
 
 }
 
+@media(max-width:1200px) {
+
+    .phonelogo {
+        display: block;
+    }
+    .logoheaders{
+        width: 150px;
+    }
+    .inner_conntent h1 {
+        font-size: 60px;
+    }
+
+}
+
 @media(max-width:991px) {
     .banner_wrapper .banner_img .container .inner_conntent {
         max-width: 100%;
     }
-.logoheaders{
-    max-width: 120px;
-}
-    .phonelogo {
-        display: block;
+
+    .logoheaders {
+        max-width: 120px;
     }
+
 
     .logoheader {
         display: none;
