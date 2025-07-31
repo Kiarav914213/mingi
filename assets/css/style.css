@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -417,8 +418,14 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 30px; /* regular gap between all items */
+  position: relative;
 }
+
+.product-grid > :nth-child(n+4):nth-child(-n+6) {
+  margin-top: 150px; /* add space for second row only */
+}
+
 
 .productbtn a {
   background: var(--headingcolor) !important;
@@ -513,19 +520,6 @@ body {
   padding-top: 200px;
 }
 
-
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ============================ months section ================= */
 .monthbest {
   background-color: var(--headingcolor);
@@ -554,7 +548,7 @@ body {
 
 .text-content ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 0px;
   list-style: none;
 }
 
@@ -681,8 +675,102 @@ body {
 }
 
 /* Colored backgrounds */
-.bg-purple { background-color: #D5A6E5; }
-.bg-pink { background-color: #FAC9DA; }
-.bg-orange { background-color: #FDB96C; }
-.bg-blue { background-color: #14B6EC; }
-.bg-hotpink { background-color: #F981F9; }
+.bg-purple {
+  background-color: #D5A6E5;
+}
+
+.bg-pink {
+  background-color: #FAC9DA;
+}
+
+.bg-orange {
+  background-color: #FDB96C;
+}
+
+.bg-blue {
+  background-color: #14B6EC;
+}
+
+.bg-hotpink {
+  background-color: #F981F9;
+}
+
+/* ============== subscribeSection ======================== */
+.subscribeSection {
+  padding: 150px 0;
+  position: relative;
+  background-color: var(--pink-color);
+}
+
+.subscribeSection form {
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.subscribe h2,
+.subscribe p {
+  text-align: left;
+  color: var(--white-color);
+}
+
+.subscribeimg {
+  right: 200px !important;
+}
+
+/* ===================== footer ======================= */
+footer {
+  background: var(--headingcolor);
+  padding: 80px 0px 20px 0;
+  color: var(--white-color);
+}
+
+
+
+.subscribe-form input.form-control {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  height: 50px;
+  max-width: 400px;
+}
+
+.btn-subscribe {
+  background-color: white;
+  color: #6a0d58;
+  font-weight: bold;
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-subscribe:hover {
+  background-color: #f5f5f5;
+  color: #4a0041;
+}
+
+footer ul li a,
+footer p {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.address,
+.address a,
+.footerlast {
+  font-family: Inter;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 27px !important;
+  letter-spacing: -2%;
+  color: var(--white-color);
+  text-decoration: none;
+}
