@@ -80,6 +80,17 @@
         padding: 10px 20px;
     }
 
+    .cta-two__img-and-content {
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-two__btn-box .bannerbtn {
+        justify-content: center;
+    }
+
     .navbtn2 a {
         background-color: darkblue;
         color: #fff;
@@ -252,20 +263,54 @@
         font-weight: 600;
     }
 
+    .cta-two__img-and-content {
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-two__inner {
+        padding: 00px 30px 50px;
+    }
+
+    .cta-two__title {
+        font-size: 29px;
+        line-height: 36px;
+    }
+
+    .inner-banner {
+        height: 300px;
+
+    }
+
     .heading h2,
-    .heading h3 {
+    .heading h3,
+    .page-title {
         font-size: 30px;
         line-height: 40px;
     }
 
+    .breadcrumb {
+        font-size: 14px;
+    }.cta-two,.blog-section-one{
+        padding: 40px 0;
+    }
+.blog-section-one{
+    padding-bottom: 0px;
+}
     .childhood1,
     .childhood2 {
         max-width: 100px;
         z-index: -1;
     }
-
+.footerlast{
+    text-align: center;
+}
     .headingproduts {
-        padding: 60px 0 0;
+        padding: 0px 0 0px;
+        position: relative;
+        top: 40px;
     }
 
     .product-grid-section {
@@ -333,12 +378,15 @@
     }
 
     footer ul li a,
-    footer p ,.address a, .footerlast {
+    footer p,
+    .address a,
+    .footerlast {
         font-size: 16px !important;
         line-height: 19px !important;
         font-weight: 400 !important;
     }
-    .address{
+
+    .address {
         font-size: 12px !important;
         line-height: 16px !important;
     }
