@@ -57,6 +57,10 @@
         max-width: 100%;
     }
 
+    .nav-icons i {
+        color: #000;
+    }
+
     .childhood1,
     .childhood2 {
         max-width: 150px;
@@ -170,6 +174,15 @@
         margin-bottom: 20px;
     }
 
+    .aboutus {
+        padding: 60px 0;
+    }
+
+
+    .aboutus h2 {
+        padding-top: 30px;
+    }
+
     .product-grid> :nth-child(n+3):nth-child(-n+6) {
         margin-top: 150px;
         /* add space for second row only */
@@ -192,10 +205,45 @@
     }
 }
 
+@media (max-width: 768px) {
+    .counter-wrapper {
+        margin-bottom: 30px;
+    }
+
+
+    .terms-section {
+        padding: 40px 0px 20px 0px;
+    }
+
+    .terms-section .container {
+        padding: 20px;
+    }
+
+    .terms-section p,
+    .terms-section li,
+    .terms-section address {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .terms-section h2 {
+        font-size: 24px;
+    }
+
+    .terms-section h3 {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 551px) {
     .inner_conntent h1 {
         font-size: 28px;
     }
+
+    #counter-section {
+        padding: 40px 0;
+    }
+
 
     .subscribeSection form {
         flex-direction: column;
@@ -248,6 +296,11 @@
         height: 730px;
     }
 
+    .img-curved {
+        height: 250px;
+        width: 100%;
+    }
+
     .banner_wrapper .banner_img .container {
         top: 55%;
     }
@@ -291,22 +344,37 @@
         line-height: 40px;
     }
 
-    .breadcrumb {
-        font-size: 14px;
-    }.cta-two,.blog-section-one{
+    .school-contact-section {
         padding: 40px 0;
     }
-.blog-section-one{
-    padding-bottom: 0px;
-}
+
+    .aboutus {
+        padding: 40px 0;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .cta-two,
+    .blog-section-one {
+        padding: 40px 0;
+    }
+
+    .blog-section-one {
+        padding-bottom: 0px;
+    }
+
     .childhood1,
     .childhood2 {
         max-width: 100px;
         z-index: -1;
     }
-.footerlast{
-    text-align: center;
-}
+
+    .footerlast {
+        text-align: center;
+    }
+
     .headingproduts {
         padding: 0px 0 0px;
         position: relative;

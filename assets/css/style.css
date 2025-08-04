@@ -64,13 +64,17 @@ body {
   color: var(--white-color);
   cursor: pointer;
 }
-.nav-icons a{
+
+.nav-icons a {
   text-decoration: none;
 }
-.main-header.sticky .nav-icons i,.main-header.sticky .nav-link{
+
+.main-header.sticky .nav-icons i,
+.main-header.sticky .nav-link {
   color: var(--black-color) !important;
 
 }
+
 .shop-now-btn {
   background: white;
   color: #4b0051;
@@ -268,7 +272,7 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   padding-bottom: 20px;
-color: var(--white-color);
+  color: var(--white-color);
 }
 
 .inner_conntent h1 span {
@@ -808,8 +812,10 @@ footer p a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   z-index: 1;
 }
+
 
 .banner-overlay {
   position: absolute;
@@ -1050,10 +1056,13 @@ footer p a:hover {
   color: var(--theme-color);
   margin-right: 8px;
 }
-.blog-style-one .post-meta span a ,.blog-title a{
+
+.blog-style-one .post-meta span a,
+.blog-title a {
   color: var(--white-color);
   text-decoration: none;
 }
+
 .blog-style-one .post-meta {
   display: inline-flex;
   gap: 26px;
@@ -1062,28 +1071,35 @@ footer p a:hover {
 .blog-style-one hr {
   margin: 15px 0;
 }
+
 .blog-link a {
-    background-color: var(--white-color);
-    padding: 10px 14px 10px 14px;
-    border-radius: 50px;
+  background-color: var(--white-color);
+  padding: 10px 14px 10px 14px;
+  border-radius: 50px;
 }
-.blog-link{
+
+.blog-link {
   margin-top: 20px;
 }
-.blog-link i{
+
+.blog-link i {
   color: var(--pink-color);
   transform: rotate(-45deg);
   transition: all 0.5s ease-in-out;
 }
-.blog-link:hover i{
+
+.blog-link:hover i {
   transform: rotate(0deg);
 }
+
 .blog-style-one .blog-content .blog-title:hover {
   color: var(--theme-color);
 }
-.blog-title a{
+
+.blog-title a {
   font-family: var(--heading-font);
 }
+
 /* Shine start */
 .blog-style-one .blog-image {
   position: relative;
@@ -1115,4 +1131,356 @@ footer p a:hover {
 
 .blog-style-one:hover .blog-image:before {
   animation: shine 1.5s;
+}
+
+/* ======================== contact us page ========================= */
+
+.school-contact-section {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.school-contact-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.school-contact-section .left-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.school-contact-section .right-column {
+  flex: 2;
+  min-width: 300px;
+}
+
+.school-contact-section .box {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.school-contact-section .box.dark {
+  background-color: var(--darkyellow-color);
+  align-items: center;
+}
+
+.school-contact-section .icon {
+  font-size: 30px;
+  color: #fff;
+  background-color: #ccc;
+  padding: 20px 27px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.school-contact-section .icon2 {
+  padding: 20px 31px !important;
+
+}
+
+.school-contact-section .box.yellow .icon {
+  background-color: var(--Yellow-color);
+}
+
+.school-contact-section .box.orange .icon {
+  background-color: var(--headingcolor);
+}
+
+.school-contact-section .box.red .icon {
+  background-color: var(--pink-color);
+}
+
+.school-contact-section .yellow {
+  background-color: var(--headingcolor) !important;
+  align-items: center;
+}
+
+.school-contact-section .orange {
+  background-color: var(--pink-color) !important;
+  align-items: center;
+}
+
+.school-contact-section .info h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: var(--white-color);
+  font-family: var(--heading-font);
+  letter-spacing: 0.5px;
+}
+
+.school-contact-section .info p a,
+.school-contact-section .info p {
+  font-size: 14px;
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  margin: 0;
+}
+
+.school-contact-section .white-text h4,
+.school-contact-section .white-text p {
+  color: var(--white-color);
+}
+
+.school-contact-section .form-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.school-contact-section .form-header {
+  background-color: #522260;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school-contact-section .form-header h4 {
+  margin: 0;
+  font-family: var(--heading-font);
+}
+
+.school-contact-section .icon-header {
+  font-size: 24px;
+  opacity: 0.3;
+}
+
+.school-contact-section form {
+  padding: 20px;
+}
+
+.school-contact-section form input,
+.school-contact-section form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+.school-contact-section form button {
+  background-color: var(--pink-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: var(--s);
+  letter-spacing: 0.5px;
+  font-weight: 300 !important;
+}
+
+.school-contact-section form button:hover {
+  background-color: var(--headingcolor);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .school-contact-section .container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* ================= terms and condition =================== */
+
+.terms-section {
+  padding: 80px 20px 20px 20px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+}
+
+.terms-section .container {
+  margin: auto;
+  padding: 50px 80px 50px 40px;
+  background-color: var(--darkyellow-color);
+  border-radius: 50px 0px 50px 0;
+}
+
+.terms-section h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: var(--headingcolor);
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+.updated-date {
+  text-align: center;
+}
+
+.terms-section h3 {
+  font-size: 26px;
+  margin-top: 30px;
+  color: var(--black-color);
+  font-family: var(--heading-font);
+
+}
+
+.terms-section p,
+.terms-section li {
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+  font-weight: 4 00;
+  font-size: 20px;
+
+}
+
+.terms-section p,
+.terms-section li {
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+}
+
+.terms-section ul {
+  padding-left: 20px;
+}
+
+.terms-section address {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 20px;
+  color: var(--black-color);
+
+}
+
+.terms-section address a {
+  text-decoration: none;
+}
+
+/*=========================== Team ============================ */
+
+
+.img-curved {
+  border-radius: 225px 45px 325px 75px / 15px 125px 35px 155px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+
+.aboutus {
+  padding: 80px 0;
+}
+
+.aboutus h2,
+.aboutus p {
+  text-align: left;
+}
+
+/* ======================== about us ==================== */
+.counter-calltoaction {
+  background-image: url("../images/counterbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* number counter */
+
+.counter {
+  text-align: center;
+}
+
+.counter-wrapper {
+  border-radius: 10px;
+  box-shadow: -2px 1px 20px rgba(0, 0, 0, 0.49);
+  padding: 40px 0;
+}
+
+.counter .counter-icon {
+  display: block;
+  font-size: 70px;
+  transition: all ease-in-out 0.2s;
+  color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.bg-3 {
+  background-color: var(--pink-color);
+}
+
+.bg-2 {
+  background-color: var(--darkyellow-color);
+}
+
+.bg-1 {
+  background-color: var(--headingcolor);
+}
+
+.counter:hover .counter-icon {
+  transform: scale(1.2);
+}
+
+.counter .counter-value {
+  display: block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  /* letter-spacing: 2px; */
+  padding: 20px 0 0;
+}
+
+.privacysection .container {
+  background-color: var(--pink-color);
+}
+.terms-section p strong{
+  color: var(--headingcolor);
+}
+.counter .counter-value:before {
+  content: "+";
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.counter .title {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-weight: 300;
+}
+
+
+.overlay {
+  box-shadow: inset 0 0 0 1222px rgba(41, 41, 41, 0.42);
+}
+
+.bg-fixed {
+  background-attachment: fixed !important;
+}
+
+#counter-section {
+  padding: 90px 0;
 }
